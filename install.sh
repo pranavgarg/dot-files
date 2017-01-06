@@ -17,5 +17,9 @@ brew install autojump
 
 
 # install software using cask
-brew cask install -y transmission skype google-chrome chromecast
+brew cask install -y transmission skype google-chrome evernote webstorm atom whatsapp
 
+# install software using cask specific to Grovo
+brew cask install -y composer phpstorm phpini
+
+brew install php70 --with-pgsql
