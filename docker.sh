@@ -1,1 +1,1 @@
-brew cask install docker
+brew cask install docker psequel 

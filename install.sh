@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -14,12 +13,12 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 # jumping between folder
 brew install autojump
+#install autojump to work on the mac
+echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/autojump.sh" >> $HOME/.zshrc
 
 
-# install software using cask
-brew cask install -y transmission skype google-chrome evernote webstorm atom whatsapp
+# install utility software using cask
+brew cask install -y transmission skype google-chrome evernote webstorm atom whatsapp slack spectacle postman iterm2
 
-# install software using cask specific to Grovo
-brew cask install -y composer phpstorm phpini
-
-brew install php70 --with-pgsql
+# brew install screensaver
+brew cask install aerial
