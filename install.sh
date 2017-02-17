@@ -3,7 +3,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install software which install graphical apps on mac os
-brew install cask
+brew install cask tree
 
 #brew install shell and its environment
 brew install zsh
@@ -18,7 +18,8 @@ echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/a
 
 
 # install utility software using cask
-brew cask install -y transmission skype google-chrome evernote webstorm atom whatsapp slack spectacle postman iterm2
+brew cask install -y transmission skype google-chrome evernote webstorm atom whatsapp slack spectacle postman iterm2 vlc
 
 # brew install screensaver
 brew cask install aerial
+

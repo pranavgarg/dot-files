@@ -1,1 +1,4 @@
-brew cask install docker psequel 
+brew cask reinstall docker psequel 
+
+#set this setting 
+docker images -f dangling=true
