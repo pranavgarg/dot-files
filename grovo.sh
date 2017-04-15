@@ -5,8 +5,8 @@ brew cask install -y composer phpstorm phpini
 brew install liquibase
 
 #install mcrypt for ssologin
-brew install php70-mcrypt
+brew install php71-mcrypt
 
-brew install php70 --with-postgresql --with-phpdbg
+brew install php71 --with-postgresql --with-phpdbg
 #Please install xcode before this as xdebug requires xcode and xdebug is used by codecov
-brew install git-flow php70-xdebug yarn
+brew install git-flow php7x-xdebug yarn
