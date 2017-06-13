@@ -6,7 +6,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install cask tree
 
 #brew install shell and its environment
-brew install zsh
+brew install zsh hub
 
 #brew install ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -23,3 +23,7 @@ brew cask install -y transmission skype google-chrome evernote webstorm atom wha
 # brew install screensaver
 brew cask install aerial
 
+# assumes git is already installed
+hub alias >> ~/.zshrc
+eval $(hub alias -s)
+git config --global hub.protocol https 

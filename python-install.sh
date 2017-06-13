@@ -1,7 +1,7 @@
 # brew install python specific environment
 curl -o $HOME/get-pip.py https://bootstrap.pypa.io/get-pip.py
 python $HOME/get-pip.py
-pip install virtualenvwrapper --ignore-installed six
+pip install codecov virtualenvwrapper --ignore-installed six 
 rm $HOME/get-pip.py
 #adding the command in the .zshrc file
 echo "export WORKON_HOME=$HOME/.virtualenvs" >> $HOME/.zshrc
