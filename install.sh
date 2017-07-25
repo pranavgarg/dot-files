@@ -12,7 +12,7 @@ brew install zsh hub
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # jumping between folder
-brew install autojump
+brew install autojump npm
 #install autojump to work on the mac
 echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/autojump.sh" >> $HOME/.zshrc
 
@@ -27,3 +27,9 @@ brew cask install aerial
 hub alias >> ~/.zshrc
 eval $(hub alias -s)
 git config --global hub.protocol https 
+
+# installing commitzen for unifying commit messages
+npm install -g commitizen
+npm install -g cz-conventional-changelog
+echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
+
