@@ -22,6 +22,9 @@ brew cask install -y transmission skype google-chrome evernote webstorm atom wha
 
 # brew install screensaver
 brew cask install aerial
+# brew install watch for running commands to run at an interval
+brew install watch
+
 
 # assumes git is already installed
 hub alias >> ~/.zshrc
