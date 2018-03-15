@@ -4,6 +4,9 @@ brew cask install -y composer phpstorm phpini
 #install liquibase
 brew install liquibase
 
+#install glide for golang package
+brew install glide
+
 #install mcrypt for ssologin
 brew install php71-mcrypt
 
