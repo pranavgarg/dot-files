@@ -12,4 +12,4 @@ brew install php71-mcrypt
 
 brew install php71 --with-postgresql --with-phpdbg
 #Please install xcode before this as xdebug requires xcode and xdebug is used by codecov
-brew install git-flow php7x-xdebug yarn
+brew install git-flow php71-xdebug yarn
