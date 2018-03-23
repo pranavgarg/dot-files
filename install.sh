@@ -2,6 +2,9 @@
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# 'Homebrew/core is shallow clone', To get complete history of run
+git -C "$(brew --repo homebrew/core)" fetch --unshallow
+
 # install software which install graphical apps on mac os
 brew install cask tree
 
