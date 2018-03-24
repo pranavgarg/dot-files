@@ -25,6 +25,11 @@ brew cask install aerial
 # brew install watch for running commands to run at an interval
 brew install watch
 
+# Install Git
+brew install git
+
+# 'Homebrew/core is shallow clone', To get complete history of run
+git -C "$(brew --repo homebrew/core)" fetch --unshallow
 
 # assumes git is already installed
 hub alias >> ~/.zshrc
