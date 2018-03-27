@@ -8,8 +8,8 @@ brew install liquibase
 brew install glide
 
 #install mcrypt for ssologin
-brew install php71-mcrypt
+brew install homebrew/php/php71-mcrypt
 
-brew install php71 --with-postgresql --with-phpdbg
+brew install homebrew/php/php71 --with-postgresql --with-phpdbg
 #Please install xcode before this as xdebug requires xcode and xdebug is used by codecov
-brew install git-flow php71-xdebug yarn
+brew install git-flow homebrew/php/php71-xdebug yarn
