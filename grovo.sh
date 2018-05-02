@@ -12,10 +12,13 @@ brew install homebrew/php/php71-mcrypt
 
 brew install homebrew/php/php71 --with-postgresql --with-phpdbg
 #Please install xcode before this as xdebug requires xcode and xdebug is used by codecov
-brew install git-flow php7x-xdebug yarn
+
+#homebrew/php xdebug is deprecated, install it this way
+pecl install xdebug
+
+brew install docker-compose
 
 #Install composer package to install services dependencies
 brew install composer
 
-brew install git-flow homebrew/php/php71-xdebug yarn
 
