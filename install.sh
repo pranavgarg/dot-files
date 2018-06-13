@@ -41,3 +41,11 @@ npm install -g commitizen
 npm install -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
+xcode-select --install
+#install pip
+sudo easy_install pip
+pip install virtualenv --ignore-installed pyasn1
+pip install virtualenvwrapper --ignore-installed pyasn1
+mkdir ~/.virtualenvs
+echo "export WORKON_HOME=~/.virtualenvs" >> ~/.zshrc
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
