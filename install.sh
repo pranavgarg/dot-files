@@ -17,7 +17,9 @@ brew install autojump npm
 echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/autojump.sh" >> $HOME/.zshrc
 
 # install utility software using cask
-brew cask install -y skype google-chrome evernote webstorm atom slack spectacle postman iterm2 vlc
+brew cask install skype google-chrome evernote webstorm atom slack spectacle postman iterm2 vlc
+
+brew cask install java
 
 # brew install screensaver
 brew cask install aerial
@@ -42,19 +44,14 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 xcode-select --install
 #install pip
-sudo easy_install pip
-pip install virtualenv --ignore-installed pyasn1
-pip install virtualenvwrapper --ignore-installed pyasn1
-mkdir ~/.virtualenvs
-echo "export WORKON_HOME=~/.virtualenvs" >> ~/.zshrc
-echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
 
 #install ide
-brew cask install -y phpstorm webstorm intellij-idea pycharm phpini
 
 ################ Backend ####################
 #install liquibase (backend)
-brew install -y liquibase
+brew install liquibase docker-compose
 
 
-brew install -y docker  docker-compose
+brew cask install phpstorm webstorm intellij-idea pycharm 
+
+brew cask install docker psequel
