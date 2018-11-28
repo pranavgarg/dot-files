@@ -16,9 +16,8 @@ brew install autojump npm
 #install autojump to work on the mac
 echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/autojump.sh" >> $HOME/.zshrc
 
-
 # install utility software using cask
-brew cask install -y transmission skype google-chrome evernote webstorm atom whatsapp slack spectacle postman iterm2 vlc
+brew cask install -y skype google-chrome evernote webstorm atom slack spectacle postman iterm2 vlc
 
 # brew install screensaver
 brew cask install aerial
@@ -34,7 +33,7 @@ git -C "$(brew --repo homebrew/core)" fetch --unshallow
 # assumes git is already installed
 hub alias >> ~/.zshrc
 eval $(hub alias -s)
-git config --global hub.protocol https 
+git config --global hub.protocol https
 
 # installing commitzen for unifying commit messages
 npm install -g commitizen
@@ -49,3 +48,13 @@ pip install virtualenvwrapper --ignore-installed pyasn1
 mkdir ~/.virtualenvs
 echo "export WORKON_HOME=~/.virtualenvs" >> ~/.zshrc
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.zshrc
+
+#install ide
+brew cask install -y phpstorm webstorm intellij-idea pycharm phpini
+
+################ Backend ####################
+#install liquibase (backend)
+brew install -y liquibase
+
+
+brew install -y docker  docker-compose
