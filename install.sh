@@ -17,12 +17,14 @@ brew install autojump npm
 echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/autojump.sh" >> $HOME/.zshrc
 
 # install utility software using cask
-brew cask install skype google-chrome evernote webstorm atom slack spectacle postman iterm2 vlc
+brew cask install google-chrome
+brew cask install atom slack spectacle postman iterm2 viscosity
 
 brew cask install java
 
 # brew install screensaver
 brew cask install aerial
+
 # brew install watch for running commands to run at an interval
 brew install watch
 
@@ -43,15 +45,16 @@ npm install -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 xcode-select --install
-#install pip
-
-#install ide
 
 ################ Backend ####################
 #install liquibase (backend)
 brew install liquibase docker-compose
 
-
-brew cask install phpstorm webstorm intellij-idea pycharm 
+brew cask install phpstorm webstorm intellij-idea pycharm
 
 brew cask install docker psequel
+
+brew install php phpunit composer
+
+pecl install xdebug
+
