@@ -52,9 +52,11 @@ brew install liquibase docker-compose
 
 brew cask install phpstorm webstorm intellij-idea pycharm
 
-brew cask install docker psequel
+brew cask install docker psequel pgadmin4
 
 brew install php phpunit composer
 
 pecl install xdebug
 
+# SHOW HIDDEN MAC FILES
+defaults write com.apple.finder AppleShowAllFiles YES
