@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # set the name for the commit name with email
 git config --global user.name "My Name"
 git config --global user.email my_email_address
