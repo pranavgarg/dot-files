@@ -106,3 +106,26 @@ RPROMPT=\$vcs_info_msg_0_
 # PROMPT=\$vcs_info_msg_0_'%# '
 zstyle ':vcs_info:git:*' formats '%b'
 export GOPATH=$HOME/go
+alias gbr="git branch | grep -v "master" | xargs git branch -D"
+
+
+alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias docker-clean-unused='docker system prune --all --force --volumes'
+alias docker-clean-all='docker stop $(docker container ls -a -q) && docker system prune -a -f --volumes'
+alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+# Wrap git automatically by adding the following to ~/.zshrc:
+
+eval "$(hub alias -s)"
+git config --global hub.protocol https
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+alias gc="git checkout"
+alias gs="git status"
+alias gm="git commit"
+
+export CIRCLE_TOKEN=
+alias gpo="git pull origin "
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+alias gbro="git remote prune origin"

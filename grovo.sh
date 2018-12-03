@@ -1,5 +1,5 @@
 # install software using cask specific to Grovo
-brew cask install -y composer phpstorm phpini
+brew cask install -y phpstorm phpini
 
 #install liquibase
 brew install liquibase
@@ -14,4 +14,13 @@ brew install scala sbt
 
 brew install homebrew/php/php71 --with-postgresql --with-phpdbg
 #Please install xcode before this as xdebug requires xcode and xdebug is used by codecov
-brew install git-flow homebrew/php/php71-xdebug yarn
+
+#homebrew/php xdebug is deprecated, install it this way
+pecl install xdebug
+
+brew install docker-compose
+
+#Install composer package to install services dependencies
+brew install composer
+
+

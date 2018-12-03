@@ -16,12 +16,15 @@ brew install autojump npm
 #install autojump to work on the mac
 echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/autojump.sh" >> $HOME/.zshrc
 
-
 # install utility software using cask
-brew cask install -y transmission skype google-chrome evernote webstorm atom whatsapp slack spectacle postman iterm2 vlc
+brew cask install google-chrome
+brew cask install atom slack spectacle postman iterm2 viscosity
+
+brew cask install java
 
 # brew install screensaver
 brew cask install aerial
+
 # brew install watch for running commands to run at an interval
 brew install watch
 
@@ -34,10 +37,24 @@ git -C "$(brew --repo homebrew/core)" fetch --unshallow
 # assumes git is already installed
 hub alias >> ~/.zshrc
 eval $(hub alias -s)
-git config --global hub.protocol https 
+git config --global hub.protocol https
 
 # installing commitzen for unifying commit messages
 npm install -g commitizen
 npm install -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
+
+xcode-select --install
+
+################ Backend ####################
+#install liquibase (backend)
+brew install liquibase docker-compose
+
+brew cask install phpstorm webstorm intellij-idea pycharm
+
+brew cask install docker psequel
+
+brew install php phpunit composer
+
+pecl install xdebug
 
