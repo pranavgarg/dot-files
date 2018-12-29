@@ -3,7 +3,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install software which install graphical apps on mac os
-brew install cask tree telnet
+brew install cask tree telnet awscli
 
 #brew install shell and its environment
 brew install zsh hub go
