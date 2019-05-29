@@ -12,9 +12,15 @@ brew install zsh hub go
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # jumping between folder
-brew install autojump npm
+brew install autojump npm 
 #install autojump to work on the mac
 echo -e "[[ -s \`brew --prefix\`/etc/autojump.sh ]] && . \`brew --prefix\`/etc/autojump.sh" >> $HOME/.zshrc
+
+# seeing directory in vim with ranger command
+brew install ranger
+
+# source code complexity
+brew install scc
 
 # install utility software using cask
 brew cask install google-chrome
